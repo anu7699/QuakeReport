@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp">
+
+    <TextView
+        android:id="@+id/tv_magnitude"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/magnitude_circle"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+
+        android:text="8.0" />
+    <RelativeLayout
+        android:layout_width="185dp"
+        android:layout_height="60dp"
+
+        >
+    <TextView
+        android:id="@+id/tv_offset_loc"
+        android:layout_width="185dp"
+        android:layout_height="20dp"
+        android:textAllCaps="true"
+        android:maxLines="1"
+        android:fontFamily="sans-serif-medium"
+        android:ellipsize="end"
+        android:textAlignment="viewStart"
+        android:layout_gravity="start"
+        android:textSize="12sp"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tv_prime_loc"
+            android:layout_width="185dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/tv_offset_loc"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/textColorEarthquakeLocation"
+            android:textSize="14sp"
+            android:textAlignment="viewStart"
+            android:layout_gravity="start"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_offset_loc"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="100dp"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"
+            android:text="Mar 6, 2010"
+            android:textColor="@color/textColorEarthquakeDetails"
+
+            android:textSize="12sp"
+
+             />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_centerVertical="true"
+            android:textColor="@color/textColorEarthquakeDetails"
+
+            android:textSize="12sp"
+            android:text="3:00 PM" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
